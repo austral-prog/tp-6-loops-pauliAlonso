@@ -1,15 +1,16 @@
-# Replace the "ANSWER HERE" for your answer
-
 def countdown(n):
-    """
-    Retorna una lista con la cuenta regresiva desde n hasta 0.
-    Si n < 0, retorna una lista vacia.
+    """Retorna una lista con la cuenta regresiva desde n 
+    hasta 0. Si n < 0, retorna []."""
+    if n < 0:
+        return []
 
-    Ejemplo: countdown(5) -> [5, 4, 3, 2, 1, 0]
-    Ejemplo: countdown(0) -> [0]
-    Ejemplo: countdown(-1) -> []
-    """
-    return "ANSWER HERE"  # Remove this line and implement
+    result = []
+    i = n
+
+    while i >= 0:
+        result.append(i)
+        i -= 1
+    return result
 
 
 def double_until(limit):
@@ -22,4 +23,14 @@ def double_until(limit):
     Ejemplo: double_until(1) -> [1]
     Ejemplo: double_until(0) -> []
     """
-    return "ANSWER HERE"  # Remove this line and implement
+
+    if limit < 1:
+        return []
+    result = []
+    i = 1
+
+    while i <= limit:
+        result.append(i)
+        i *= 2
+    return result 
+    

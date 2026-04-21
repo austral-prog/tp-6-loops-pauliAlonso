@@ -23,5 +23,4 @@ def sum_of_powers(base, max_exp):
     for i in range(max_exp +1):
         suma += power(base,i)
     return suma 
-
     
